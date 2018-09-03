@@ -48,3 +48,12 @@ td{
  .hoverFull{
     background-color: #f8cbb7;
 } 
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    height: 50px;
+}
