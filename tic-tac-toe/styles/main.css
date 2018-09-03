@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(240, 240, 220) !important;
+}
+
+.myHeader{
+    background: lightblue;
+    border: 1px solid #444;
+    height: 30%;
+}
+
+.myHeader h1{
+    padding: 20px;
+    font-family: "apercu",sans-serif;
+    
+    
+    
+}
+
+.myTable{
+    width: 90%;
+    margin-top: 30px;
+    
+}
+
+.firstrow, .secondrow{
+    border-bottom: 5px solid #c2bbbb;
+    
+}
+
+.firstcol, .secondcol{
+    border-right: 5px solid #c2bbbb;
+    
+}
+
+td{
+    height: 25vh;
+    width: 25vw;
+    text-align: center;
+    font-size: 9vw;
+    position: relative;
+    
+}
+
+.hoverFree{
+    background-color: #e1ecf3
+}
+
+ .hoverFull{
+    background-color: #f8cbb7;
+} 
