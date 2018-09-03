@@ -27,14 +27,20 @@ function win(sign){
         }
         if(count==2) {
             table[mark].innerText = AISign;
-            if(sign==AISign) setTimeout(newGame,2500);
+            if(sign==AISign)  {
+                for(let el of table) el.removeEventListener('click',setSign);
+                setTimeout(newGame,2500);
+            }
             else {
                 let check=false;
                 for(let el of table) if(el.innerText=='') {
                     check=true;
                     break;
                 }
-                if(!check) setTimeout(newGame,2500);
+                if(!check)  {
+                    for(let el of table) el.removeEventListener('click',setSign);
+                    setTimeout(newGame,2500);
+                }
             }
             return true;
         }
@@ -49,14 +55,20 @@ function win(sign){
         }
         if(count==2) {
             table[mark].innerText = AISign;
-            if(sign==AISign) setTimeout(newGame,2500);
+            if(sign==AISign)  {
+                for(let el of table) el.removeEventListener('click',setSign);
+                setTimeout(newGame,2500);
+            }
             else {
                 let check=false;
                 for(let el of table) if(el.innerText=='') {
                     check=true;
                     break;
                 }
-                if(!check) setTimeout(newGame,2500);
+                if(!check)  {
+                    for(let el of table) el.removeEventListener('click',setSign);
+                    setTimeout(newGame,2500);
+                }
             }
             return true;
         }
@@ -73,14 +85,20 @@ function win(sign){
 
     if(count==2) {
         table[mark].innerText = AISign;
-        if(sign==AISign) setTimeout(newGame,3000);
+        if(sign==AISign) {
+            for(let el of table) el.removeEventListener('click',setSign);
+            setTimeout(newGame,2500);
+        }
         else {
             let check=false;
             for(let el of table) if(el.innerText=='') {
                 check=true;
                 break;
             }
-            if(!check) setTimeout(newGame,3000);
+            if(!check) {
+                for(let el of table) el.removeEventListener('click',setSign);
+                setTimeout(newGame,2500);
+            }
         }
         return true;
     }
@@ -97,14 +115,20 @@ function win(sign){
 
     if(count==2) {
         table[mark].innerText = AISign;
-        if(sign==AISign) setTimeout(newGame,3000);
+        if(sign==AISign) {
+            for(let el of table) el.removeEventListener('click',setSign);
+            setTimeout(newGame,2500);
+        }
         else {
             let check=false;
             for(let el of table) if(el.innerText=='') {
                 check=true;
                 break;
             }
-            if(!check) setTimeout(newGame,3000);
+            if(!check) {
+                for(let el of table) el.removeEventListener('click',setSign);
+                setTimeout(newGame,2500);
+            }
         }
         return true;
     }
@@ -127,7 +151,10 @@ function trap(){
 }
 
 function newGame(){
-    for(let el of table) el.innerText='';
+    for(let el of table) {
+        el.innerText='';
+        el.addEventListener('click',setSign);
+}
     table[0].innerText = AISign;
     last = table[0];
 }
