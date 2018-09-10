@@ -51,9 +51,9 @@ function createDeck(){
 
 function shuffleDeck(deck) {
     for (let i = 0; i < deck.length; i++) {
-      let swapIdx = Math.trunc(Math.random() * deck.length);
-      let tmp = deck[swapIdx];
-      deck[swapIdx] = deck[i];
+      let swapInd = Math.trunc(Math.random() * deck.length);
+      let tmp = deck[swapInd];
+      deck[swapInd] = deck[i];
       deck[i] = tmp;
     }
   }

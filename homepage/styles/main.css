@@ -13,6 +13,10 @@
     margin-top:40px; 
 }
 
+#pickgame{
+    text-align: center;
+}
+
 .card-header img{
     width: 1.5rem;
     height: 1.5rem;
@@ -45,7 +49,6 @@
   }
   .page-wrap {
     min-height: 100%;
-    /* equal to footer height */
     margin-bottom: -152px; 
   }
   .page-wrap:after {

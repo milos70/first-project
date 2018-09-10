@@ -12,6 +12,9 @@ document.getElementById('tic-tac-toe').addEventListener("click",function(){
     window.open('../tic-tac-toe/tic-tac-toe.html',"_blank");
 });
 
+document.getElementById('battleship').addEventListener("click",function(){
+    window.open('../battleship/battleship.html',"_blank");
+});
 
 
 function link(){
